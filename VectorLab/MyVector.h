@@ -1,6 +1,9 @@
 #ifndef MyVector_H
+#def MyVector_H
 
-#endif // !1
+// always put the #endif at the last line of the file so we 
+//move this al the way down. i've put it there already. scroll down all the way.
+//#endif // !1
 
 using namespace std;
 
@@ -74,3 +77,5 @@ private:
 
 
 };
+
+#endif
