@@ -1,8 +1,6 @@
-#ifndef 1
+#ifndef MyVector_H
 
 #endif // !1
-
-
 
 using namespace std;
 
