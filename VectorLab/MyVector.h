@@ -1,5 +1,8 @@
-#include <iostream>
-#include <vector>
+#ifndef 1
+
+#endif // !1
+
+
 
 using namespace std;
 
@@ -7,14 +10,14 @@ template<class T>
 class MyVector(int MySize = 1) {
 
 	counter = 0; // next available index 
-	capacity = MySize; 
+	capacity = MySize;
 	myArray = new T[MySize];
 
 	// Default constructor
 
 	// Modified Constructor 
-	
-	}
+
+}
 
 void push() {
 	// Add a new element to the end of the vector
@@ -57,14 +60,14 @@ void print() {
 	// Use counter for point
 }
 
-	~MyVector() {
-		if (myArray != Null) {
+~MyVector() {
+	if (myArray != Null) {
 
-			delete[] myArray;
-		}
+		delete[] myArray;
+	}
 
-private: 
-	int counter; 
+private:
+	int counter;
 	int capacity;
 	T* myArray;
 	void doubleSize();
