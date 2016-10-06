@@ -44,6 +44,12 @@ T MyVector::elementAtRank(int myRank) {
 template<class T>
 void MYVector::replaceAtrRank(int myRank, T myOBject) {
 	// replace the element at the specified rank
+	if (0 <= myRank < counter) {
+		this->myArray[myRank] = myObject;
+	}
+	else {
+		cout << "Te rank is not in the right range" << endl;
+	}
 }
 template<class T>
 void MyVector::insertAtRank(int myRank, T myObject) {
@@ -51,14 +57,45 @@ void MyVector::insertAtRank(int myRank, T myObject) {
 	// Make room by shifting elements forwards
 	// Insert the element at the rank
 	// Update counter
+	/
+	if (0<=myRank < counter)
+		if (couter == capacity) {
+			this->doubleSize()
+				//shifting 
+				for9
+				int i = counter; i > myrank; i--){
+				this->myArray[i] = this->myArray(i - 1);
+				
+						}
+						this->myArray[myRank] = myObject;
+						counter++;
+	}
+	else {
+		cout << "The rank is not in the right range" << endl;
+	}
 }
+
 template<class T>
 void MyVector::deleteAtRank(int myRank) {
 	// Delete element at the specified rank 
 	// Delete element at the rank by shifting elements backwards 
 	// Update counter
+
+	if (0 <= myRank < counter) {
+		for (int i = myRank; i < couner; i++) {
+			this->myArray[i] = this->myArray[i + 1];
+		}
+		counter--;
+	}
+	else {
+		cout << " The rank is not in the right range" << endl;
+	}
+
 }
 
 void MyVector::print() {
 	// Use counter for point
+	for (int i = 0; i < counter; i++) {
+		cout << this->myArray[i];
+	}
 }
