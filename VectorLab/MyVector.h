@@ -18,39 +18,23 @@ class MyVector(int MySize = 1) {
 
 	// Modified Constructor 
 
-}
-
-void push() {
-	// Add a new element to the end of the vector
-	// Check if there is enough room
-	// Insert the element to the end of the vector 
-	// increase counter (variable for num of elements 
-}
-
-void pop() {
-	// remove the last element from the vector
-	// Check if Counter is 0 or not 
-	// Simply decrease counter if not, do nothing otherwise
+	~if (myArray != NULL) {
+		delete[] myArray;
+	}
 
 }
 
-void elemAtRank() {
-	// Returns the element at the user specified rank or index
+void push(T myObject);
 
-}
+void pop();
 
-void replaceAtRank() {
-	// replace the element at the specified rank
-}
+T elemAtRank(int myRank);
 
-void insertAtRank() {
-	// Check capacity 
-	// Make room by shifting elements forwards
-	// Insert the element at the rank
-	// Update counter
-}
+void replaceAtRank(int myRank, T myObject);
 
-void deleteAtRank() {
+void insertAtRank(int myRank, T myObject);
+
+void deleteAtRank(int myRank) {
 	// Delete element at the specified rank 
 	// Delete element at the rank by shifting elements backwards 
 	// Update counter
@@ -71,7 +55,16 @@ private:
 	int counter;
 	int capacity;
 	T* myArray;
-	void doubleSize();
+	void doubleSize() {
+		T* temp = new T[2 * capacity];
+		// copy elements to new array 
+		for (int i = 0; i < counter; i++) {
+			temp[1] = myArray[i];
+		}
+		delete myArray = temp;
+		myArray = templ
+			this->scapacity = 2 * capacity;
+	}
 
 
 
@@ -81,6 +74,7 @@ private:
 #endif
 
 /*
+
 #ifndef MYVECTOR_H
 #define MYVECTOR_H
 
@@ -139,4 +133,5 @@ public:
 };
 
 //#endif
-*/
+
+*\
